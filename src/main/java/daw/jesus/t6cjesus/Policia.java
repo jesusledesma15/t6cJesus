@@ -37,6 +37,11 @@ public class Policia extends Persona{
     public void setInicio(LocalDate inicio) {
         this.inicio = inicio;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "nPlaca=" + nPlaca + ", inicio=" + inicio + '}';
+    }
     
     
 }
