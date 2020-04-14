@@ -15,4 +15,13 @@ public class Nacional {
     private String coche;
     private String pais;
     private int numEmergencia;
+
+    public Nacional(String arma, String coche, String pais, int numEmergencia) {
+        this.arma = arma;
+        this.coche = coche;
+        this.pais = pais;
+        this.numEmergencia = numEmergencia;
+    }
+    
+    
 }
