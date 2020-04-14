@@ -31,6 +31,10 @@ public class Local extends Policia {
         System.out.println("Circulo por la calle como un policía Local");
     }
 
+    public void custodiarEdificio(String edificio){
+        System.out.println("Custodiando edificio " + edificio);
+    }
+    
     public String getArma() {
         return arma;
     }
