@@ -54,6 +54,11 @@ public class Persona {
     public void setTlf(int tlf) {
         this.tlf = tlf;
     }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "nombre=" + nombre + ", apellidos=" + apellidos + ", nif=" + nif + ", tlf=" + tlf + '}';
+    }
     
     
 }
