@@ -25,6 +25,38 @@ public class Local extends Policia {
         this.Localidad = Localidad;
         this.numEmergencia = numEmergencia;
     }
+
+    public String getArma() {
+        return arma;
+    }
+
+    public void setArma(String arma) {
+        this.arma = arma;
+    }
+
+    public String getCoche() {
+        return coche;
+    }
+
+    public void setCoche(String coche) {
+        this.coche = coche;
+    }
+
+    public String getLocalidad() {
+        return Localidad;
+    }
+
+    public void setLocalidad(String Localidad) {
+        this.Localidad = Localidad;
+    }
+
+    public int getNumEmergencia() {
+        return numEmergencia;
+    }
+
+    public void setNumEmergencia(int numEmergencia) {
+        this.numEmergencia = numEmergencia;
+    }
     
     
 }
