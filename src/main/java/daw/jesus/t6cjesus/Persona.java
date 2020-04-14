@@ -15,4 +15,13 @@ public class Persona {
     private String apellidos;
     private String nif;
     private int tlf;
+
+    public Persona(String nombre, String apellidos, String nif, int tlf) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.nif = nif;
+        this.tlf = tlf;
+    }
+    
+    
 }
