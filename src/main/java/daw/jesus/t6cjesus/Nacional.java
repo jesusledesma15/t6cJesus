@@ -13,4 +13,6 @@ public class Nacional {
     
     private String arma;
     private String coche;
+    private String pais;
+    private int numEmergencia;
 }
