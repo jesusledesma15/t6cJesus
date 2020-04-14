@@ -26,6 +26,10 @@ public class Policia extends Persona{
      public void circular(){
         System.out.println("Circulo por la calle como un policía");
     }
+     
+     public void renovarPlaca(int nueva){
+         setnPlaca(nueva);
+     }
     
     public int getnPlaca() {
         return nPlaca;
