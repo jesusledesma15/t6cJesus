@@ -22,6 +22,38 @@ public class Nacional {
         this.pais = pais;
         this.numEmergencia = numEmergencia;
     }
+
+    public String getArma() {
+        return arma;
+    }
+
+    public void setArma(String arma) {
+        this.arma = arma;
+    }
+
+    public String getCoche() {
+        return coche;
+    }
+
+    public void setCoche(String coche) {
+        this.coche = coche;
+    }
+
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    public int getNumEmergencia() {
+        return numEmergencia;
+    }
+
+    public void setNumEmergencia(int numEmergencia) {
+        this.numEmergencia = numEmergencia;
+    }
     
     
 }
