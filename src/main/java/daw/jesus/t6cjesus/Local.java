@@ -57,6 +57,11 @@ public class Local extends Policia {
     public void setNumEmergencia(int numEmergencia) {
         this.numEmergencia = numEmergencia;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "arma=" + arma + ", coche=" + coche + ", Localidad=" + Localidad + ", numEmergencia=" + numEmergencia + '}';
+    }
     
     
 }
