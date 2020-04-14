@@ -12,7 +12,7 @@ import java.time.LocalDate;
  * @author Jesus
  */
 public class Local extends Policia {
-    
+
     private String arma;
     private String coche;
     private String Localidad;
@@ -24,6 +24,11 @@ public class Local extends Policia {
         this.coche = coche;
         this.Localidad = Localidad;
         this.numEmergencia = numEmergencia;
+    }
+
+    @Override
+    public void circular() {
+        System.out.println("Circulo por la calle como un policía Local");
     }
 
     public String getArma() {
@@ -62,6 +67,5 @@ public class Local extends Policia {
     public String toString() {
         return super.toString() + "arma=" + arma + ", coche=" + coche + ", Localidad=" + Localidad + ", numEmergencia=" + numEmergencia + '}';
     }
-    
-    
+
 }
