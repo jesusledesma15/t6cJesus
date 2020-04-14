@@ -26,11 +26,16 @@ public class Nacional extends Policia {
         this.numEmergencia = numEmergencia;
     }
 
-      @Override
-     public void circular(){
+    @Override
+    public void circular() {
         System.out.println("Circulo por la calle como un policía Nacional");
     }
-    
+
+    public void renovarNif(Persona persona) {
+        System.out.println("Su nif " + persona.getNif() + " ha sido renovado");
+
+    }
+
     public String getArma() {
         return arma;
     }
