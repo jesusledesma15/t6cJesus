@@ -21,6 +21,22 @@ public class Policia extends Persona{
         this.nPlaca = nPlaca;
         this.inicio = inicio;
     }
+
+    public int getnPlaca() {
+        return nPlaca;
+    }
+
+    public void setnPlaca(int nPlaca) {
+        this.nPlaca = nPlaca;
+    }
+
+    public LocalDate getInicio() {
+        return inicio;
+    }
+
+    public void setInicio(LocalDate inicio) {
+        this.inicio = inicio;
+    }
     
     
 }
