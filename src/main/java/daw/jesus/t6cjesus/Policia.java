@@ -22,6 +22,11 @@ public class Policia extends Persona{
         this.inicio = inicio;
     }
 
+    @Override
+     public void circular(){
+        System.out.println("Circulo por la calle como un policía");
+    }
+    
     public int getnPlaca() {
         return nPlaca;
     }
