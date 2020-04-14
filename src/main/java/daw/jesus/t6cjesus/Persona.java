@@ -22,6 +22,10 @@ public class Persona {
         this.nif = nif;
         this.tlf = tlf;
     }
+    
+    public void circular(){
+        System.out.println("Circulo por la calle como persona");
+    }
 
     public String getNombre() {
         return nombre;
