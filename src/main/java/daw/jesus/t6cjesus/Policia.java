@@ -5,10 +5,22 @@
  */
 package daw.jesus.t6cjesus;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author Jesus
  */
-public class Jugador {
+public class Policia extends Persona{
+    
+    private int nPlaca;
+    private LocalDate inicio;
+
+    public Policia(int nPlaca, LocalDate inicio, String nombre, String apellidos, String nif, int tlf) {
+        super(nombre, apellidos, nif, tlf);
+        this.nPlaca = nPlaca;
+        this.inicio = inicio;
+    }
+    
     
 }
