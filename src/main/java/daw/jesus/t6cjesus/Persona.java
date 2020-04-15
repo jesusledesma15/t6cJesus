@@ -5,6 +5,8 @@
  */
 package daw.jesus.t6cjesus;
 
+import java.util.Objects;
+
 /**
  *
  * @author Jesus
@@ -22,8 +24,8 @@ public class Persona {
         this.nif = nif;
         this.tlf = tlf;
     }
-    
-    public void circular(){
+
+    public void circular() {
         System.out.println("Circulo por la calle como persona");
     }
 
@@ -63,6 +65,37 @@ public class Persona {
     public String toString() {
         return "Persona{" + "nombre=" + nombre + ", apellidos=" + apellidos + ", nif=" + nif + ", tlf=" + tlf + '}';
     }
-    
-    
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 11 * hash + Objects.hashCode(this.nombre);
+        hash = 11 * hash + Objects.hashCode(this.apellidos);
+        hash = 11 * hash + Objects.hashCode(this.nif);
+        hash = 11 * hash + this.tlf;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Persona other = (Persona) obj;
+        if (this.tlf != other.tlf) {
+            return false;
+        }
+
+        if (!Objects.equals(this.nif, other.nif)) {
+            return false;
+        }
+        return true;
+    }
+
 }
