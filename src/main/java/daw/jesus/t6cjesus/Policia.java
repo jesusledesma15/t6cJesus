@@ -34,6 +34,7 @@ public class Policia extends Persona{
      
      public void renovarPlaca(int nueva){
          setnPlaca(nueva);
+         System.out.println("Policía ha renovado su placa");
      }
     
     public int getnPlaca() {
@@ -75,6 +76,10 @@ public class Policia extends Persona{
             return false;
         }
         if (getClass() != obj.getClass()) {
+            return false;
+        }
+        
+        if(!super.equals(obj)){
             return false;
         }
         final Policia other = (Policia) obj;
