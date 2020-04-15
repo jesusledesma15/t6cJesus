@@ -6,6 +6,7 @@
 package daw.jesus.t6cjesus;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 /**
  *
@@ -26,6 +27,9 @@ public class Prueba {
         
         Nacional d1 = new Nacional("Fusil hk33", "Toyota Prius+", "España", 92,72564541, LocalDate.of(1970, 5, 8), "Juan", "Vargas", "41854413J",681232111);
         Nacional d2 = new Nacional("Fusil hk33", "Citroen Piccaso", "España", 92,92564541, LocalDate.of(1970, 5, 8), "Raquel", "Murillo", "33854413J",661232161);
+        
+        ArrayList <Persona> listaPersona = new ArrayList<>();
+        listaPersona.add(a1);listaPersona.add(a2);listaPersona.add(b1);listaPersona.add(b2);listaPersona.add(c1);listaPersona.add(c2);listaPersona.add(d1);listaPersona.add(d2);
     }
     
 }
